@@ -1,16 +1,14 @@
 import React from 'react'
-import { data } from '../data'
+import { data } from './data/data'
 import { FaShoppingBag } from 'react-icons/fa';
 
 export default function RecentOrder() {
   return (
-    <div className='w-[300px] bg-gray-400 p-5 rounded-lg h-[70vh] overflow-y-scroll'>
+    <div className='w-[300px] max-md:w-[450px] flex justify-center bg-gray-400 p-5 rounded-lg h-[450px] overflow-y-scroll'>
         
-        <div className='bg-red-300 w-full'>
-            <h1 className='font-bold justify-center flex'>Recent Order</h1>
-        </div>
+       
         
-        <ul>
+        <ul className='w-full'>
             {data.map((order,id)=>(
                 <li
                 key={id}
@@ -28,7 +26,7 @@ export default function RecentOrder() {
 
                    <div className='flex items-center space-x-10'>
                      <p className='text-gray-800 font-bold text-[15px]'>${order.total}</p>
-                     <p className='text-[10px]'>{order.date}</p>
+                     <p className=' text-[10px]'>{order.date}</p>
                      
                          
                    </div> 

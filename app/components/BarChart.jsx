@@ -51,14 +51,14 @@ export default function BarChart() {
       }, [])
   return(  
   
-  <div className='p-4 flex gap-5'>
+  <div className='mt-16 p-4 flex gap-8 max-md:flex-col '>
 
-  <div className=' w-full md:col-span-2 h-full m-auto p-8 border rounded-lg bg-white'>
+  <div className='col-span-3 w-full md:col-span-2 h-full m-auto p-8 border rounded-lg bg-white'>
     <Bar data={chartData} options={chartOptions} />
    
   </div>
 
-  <div>
+  <div className='flex justify-center'>
   <RecentOrder />
   </div>
 
