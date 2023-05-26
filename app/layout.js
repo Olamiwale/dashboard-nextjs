@@ -14,15 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="flex justify-between">
-          <div className="w-[150px]">
-            <div className="fixed h-screen w-[125px] lg:w-[130px]">
-              <Sidebar />
-            </div>
+          <div className="w-[100px]">
+            <Sidebar />
           </div>
 
-          <div className="w-full">
-            <div className="bg-red-700">{children}</div>
-          </div>
+          <div className="w-full">{children}</div>
         </div>
       </body>
     </html>

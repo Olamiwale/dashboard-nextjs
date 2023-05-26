@@ -4,7 +4,7 @@ import { FaShoppingBag } from 'react-icons/fa';
 
 export default function RecentOrder() {
   return (
-    <div className='w-[300px] max-md:w-[450px] flex justify-center bg-gray-400 p-5 rounded-lg h-[450px] overflow-y-scroll'>
+    <div className='w-[300px] max-md:w-[400px] flex justify-center bg-gray-400 p-5 rounded-lg h-[450px] overflow-y-scroll'>
         
        
         
