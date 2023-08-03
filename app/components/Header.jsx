@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import Menubar from '../components/Menubar'
-import {AiFillBook, AiOutlineClose} from 'react-icons/ai'
+import {AiFillBook, AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 
 export default function Header() {
@@ -16,8 +16,9 @@ export default function Header() {
   return (
     <div className="shadow-lg p-4 bg-gray-300 ">
       <div className="w-full flex justify-between items-center px-4 pt-4 text-1xl font-bold">
-        <AiFillBook size={30} onClick={toggle} /> 
-
+       <div className="bg-gray-400 p-2 rounded-full" onClick={toggle}>
+        {!nav ? ( <AiOutlineMenu size={20} />) : (<AiOutlineClose size={20} /> )}
+       </div>
        
 
         <div className="h-full justify-center items-center">

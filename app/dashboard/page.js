@@ -6,7 +6,7 @@ import Header from '../components/Header';
 export default function page() {
   return (
     <div className='bg-gray-100 min-h-screen'>
-      <Header />
+    
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
           <div className='my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'>

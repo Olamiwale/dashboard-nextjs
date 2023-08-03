@@ -7,7 +7,7 @@ import Header from "../components/Header";
 export default function wallet() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Header />
+
       <div className="p-4">
         <div className="w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto">
           <div className="my-3 p-2 grid grid-cols-2 md:grid-cols-4 sm:grid-cols-3 bg-red-400 items-center justify-between cursor-pointer">

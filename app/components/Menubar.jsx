@@ -1,22 +1,22 @@
-"use client";
 
-import React, { useState } from "react";
+
+import React from "react";
 import Link from "next/link";
 import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { FiSettings } from "react-icons/fi";
 
 export default function Sidebar() {
-  const [nav, SetNav] = useState(false);
+
 
   return (
     <div className="fixed left-0 h-full flex justify-center items-center  ">
-      <div className="flex flex-col bg-gray-900 w-[70px] ">
+      <div className="flex flex-col bg-gray-900 w-[60px] ">
 
         <div className=" group items-center flex flex-col rounded-md">
           <div className="bg-purple-800 text-white p-3 my-6 rounded-lg inline-block ">
             <Link href="/">
-              <RxSketchLogo size={20} />
+              <RxSketchLogo size={15} />
             </Link>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Sidebar() {
           </p>
           <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-6 p-3 rounded-lg inline-block">
             <Link href="/dashboard">
-              <RxDashboard size={20} />
+              <RxDashboard size={15} />
             </Link>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Sidebar() {
           </p>
           <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-6 p-3 rounded-lg inline-block">
             <Link href="/account">
-              <RxPerson size={20} />
+              <RxPerson size={15} />
             </Link>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Sidebar() {
           </p>
           <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-6 p-3 rounded-lg inline-block">
             <Link href="/wallet">
-              <HiOutlineShoppingBag size={20} />
+              <HiOutlineShoppingBag size={15} />
             </Link>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Sidebar() {
           </p>
           <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-6 p-3 rounded-lg inline-block">
             <Link href="/settings">
-              <FiSettings size={20} />
+              <FiSettings size={15} />
             </Link>
           </div>
         </div>
