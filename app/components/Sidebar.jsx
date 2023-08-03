@@ -3,11 +3,12 @@ import Link from "next/link";
 import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { FiSettings } from "react-icons/fi";
+import Menubar from '../components/Menubar'
 
 export default function Sidebar() {
   return (
-    <div className="py-16 fixed h-full mr-2 bg-gray-900 justify-center w-[80px]">
-      <div>
+    <>
+      <div className="py-16 fixed h-full mr-2 bg-gray-900 justify-center w-[80px] max-sm:hidden">
         <div className="flex flex-col items-center">
           <div className="bg-purple-800 text-white p-3 my-6 rounded-lg inline-block ">
             <Link href="/">
@@ -16,7 +17,7 @@ export default function Sidebar() {
           </div>
 
           <div className="group flex flex-col items-center">
-            <p className="absolute text-white font-bold cursor-pointer opacity-0 group-hover:opacity-100">
+            <p className="absolute text-white font-bold cursor-pointer opacity-0    group-hover:opacity-100">
               History
             </p>
             <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-6 p-3 rounded-lg inline-block">
@@ -57,6 +58,12 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-    </div>
+
+      <div>
+        <Menubar /> 
+      </div>
+
+    
+    </>
   );
 }

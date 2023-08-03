@@ -8,19 +8,19 @@ export default function page() {
     <div className='py-20'>
       <div className='px-[50px]'>
         <div className='flex justify-between p-4'>
-             <p className='text-xl font-bold'>Change Background Color</p>
+             <p className='text-xl font-bold max-sm:text-[12px]'>Change Background Color</p>
              <button className='rounded-lg bg-gray-300 p-4 hover:shadow-lg cursor-pointer'>Change</button>
         </div>
         <div className='flex justify-between p-4'>
-             <p className='text-xl font-bold'>Change Currency</p>
+             <p className='text-xl font-bold max-sm:text-[12px]'>Change Currency</p>
              <button className='rounded-lg bg-gray-300 p-4 hover:shadow-lg cursor-pointer'>Change</button>
         </div>
         <div className='flex justify-between p-4'>
-             <p className='text-xl font-bold'>Change Details</p>
+             <p className='text-xl font-bold max-sm:text-[12px]'>Change Details</p>
              <button className='rounded-lg bg-gray-300 p-4 hover:shadow-lg cursor-pointer'>Change</button>
         </div>
         <div className='flex justify-between p-4'>
-             <p className='text-xl font-bold'>Reset All</p>
+             <p className='text-xl font-bold max-sm:text-[12px]'>Reset All</p>
              <button className='rounded-lg bg-gray-300 p-4 hover:shadow-lg cursor-pointer'>Change</button>
         </div>
      
